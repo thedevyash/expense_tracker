@@ -1,12 +1,15 @@
 import 'package:flutter/material.dart';
-
-import 'expenses.dart';
+import 'package:studysynth/Pages/login.dart';
+import 'package:studysynth/widgets/expenses.dart';
+import 'package:studysynth/models/palette.dart';
 
 void main() {
   runApp(
-    const MaterialApp(
+    MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Expenses(),
+      theme: ThemeData.dark()
+          .copyWith(scaffoldBackgroundColor: Pallete.backgroundColor),
+      home: const Expenses(),
     ),
   );
 }
