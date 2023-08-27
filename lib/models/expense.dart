@@ -9,7 +9,12 @@ class Expense {
   final double amount;
   final String id;
   final DateTime date;
+  final Category category;
 
-  Expense({required this.title, required this.amount, required this.date})
+  Expense(
+      {required this.title,
+      required this.amount,
+      required this.date,
+      required this.category})
       : id = uuid.v4(); //named optional arguments
 }
